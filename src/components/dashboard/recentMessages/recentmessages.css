@@ -1,0 +1,50 @@
+@import url('../../globalStyles/globalStyles.css');
+.recent-messages-page {
+    box-shadow: 0 0 1.5rem 0 rgb(136 152 170 / 30%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.messages-table{
+    table-layout: fixed;
+}
+
+.table-title{
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(198, 198, 224, 0.514);
+    padding: 5px 0px;
+}
+
+#Delivered{
+    background-color: var(--green-color);
+    color: #ffff;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: center;
+}
+#Pending{
+    background-color: var(--orange-color);
+    color: #ffff;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: center;
+}
+#Failed{
+    background-color: var(--danger);
+    color: #ffff;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+

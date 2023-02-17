@@ -1,0 +1,199 @@
+@import url('../globalStyles/globalStyles.css');
+
+.signup-page {
+    min-height: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.signup-left-side {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.signup-lipachat-logo {
+    width: 120px;
+    display: block;
+}
+
+.signup-title2 {
+    text-align: center;
+}
+
+.inputs-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    padding: 0px !important;
+}
+
+.signup-form-section {
+    background-color: #fff;
+    height: 100vh;
+    width: 35%;
+    display: flex;
+    min-height: 100vh;
+}
+
+.signup-form {
+    margin: auto auto !important;
+    padding: 0px 20px;
+    padding-bottom: 40px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.welcome-header {
+    font-size: 24px;
+    padding: 10px 0px;
+    color: #222222;
+    font-weight: bold;
+    text-align: center;
+}
+
+.signup-title2{
+    color: #419aff;
+    font-size: 14px;
+}
+
+.signup-input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0px;
+}
+
+.signup-label {
+    color: rgb(59, 59, 59);
+    font-size: 14px;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+.signup-input {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.signup-input:focus {
+    outline: none;
+    border: 1px solid var(--blue-color);
+}
+
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-image: var(--theme-color);
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.signup-button:hover{
+    opacity: 0.1 !important;
+    transition: opacity .3s ease-in-out;
+}
+
+
+.signup-actions {
+    margin-top: 15px;
+}
+
+.reset-link {
+    text-decoration: none;
+    color: #0083B0;
+    font-size: 14px;
+}
+
+
+.signup-section {
+    text-align: center;
+}
+
+.login-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: #0083B0;
+}
+
+.signup-link:hover,
+.reset-link:hover {
+    border-bottom: 2px solid #0083B0;
+}
+
+
+#form-error {
+    color: var(--danger);
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 990px) {
+
+    .signup-page {
+        flex-direction: column;
+    }
+
+    .signup-left-side {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .signup-form-section {
+        width: 100%;
+    }
+
+    .signup-form {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    .signup-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .signup-form {
+        width: 95%;
+    }
+}
+
+
+
+/* LOADING ANIMATION */
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255) !important;
+    border-color: rgb(255, 255, 255) transparent rgb(254, 255, 255) transparent !important;
+    animation: lds-dual-ring 0.9s linear infinite !important;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+

@@ -1,0 +1,36 @@
+@import url('../globalStyles/globalStyles.css');
+#main{
+    display: table;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.fof{
+	  display: table-cell;
+	  vertical-align: middle;
+}
+
+.fof h1{
+	  font-size: 50px;
+	  display: inline-block;
+	  padding-right: 12px;
+	  animation: type .5s alternate infinite;
+  margin-bottom:0px;
+  color: #888;
+}
+
+.fof p{
+    margin-bottom: 20px;
+}
+
+.back-link{
+  background-image: var(--theme-color);
+  color: white;
+  padding: 7px 10px;
+  border-radius:5px;
+  text-align:center;
+  text-decoration: none;
+  font-weight: bold;
+}
+

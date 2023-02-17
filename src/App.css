@@ -1,0 +1,156 @@
+.main-page {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#toggle-bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    width: 250px;
+}
+
+
+.right {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.content-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 92vh;
+}
+
+@media screen and (max-width: 1250px) {
+    #toggle-bar {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* Session modal styling */
+.session-modal-active {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.session-modal {
+    position: relative;
+    width: 500px;
+    height: 210px;
+    left: 0;
+    top: 20%;
+    margin: auto auto !important;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.4);
+    text-align: center;
+    overflow: hidden;
+    animation: show-modal .7s ease-in-out;
+    margin-top: 20px !important;
+    z-index: 1000;
+}
+
+.modal.hide {
+    animation: hide-modal .6s ease-in-out both;
+}
+
+#session-img {
+    margin-top: 24px;
+}
+
+.session-title {
+    display: block;
+    line-height: 24px;
+    margin: 14px 0 5px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.session-message {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+    margin: 0;
+    padding: 0 30px;
+}
+
+.session-buttons {
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding-bottom: 10px;
+}
+
+.session-dismiss-button {
+    width: 40%;
+    background: #1d45b4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+.session-dismiss-button:hover {
+    background: #4c6fcf;
+}
+
+
+@keyframes show-modal {
+    0% {
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    80% {
+        transform: scale(.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes hide-modal {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}

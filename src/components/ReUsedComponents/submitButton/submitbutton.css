@@ -1,0 +1,44 @@
+.submit-btn {
+    padding: 10px 7px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-image: var(--theme-color);
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.submit-btn-disabled{
+    cursor: not-allowed;
+    padding: 7px 7px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--theme-color);
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255) !important;
+    border-color: rgb(255, 255, 255) transparent rgb(254, 255, 255) transparent !important;
+    animation: lds-dual-ring 0.9s linear infinite !important;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

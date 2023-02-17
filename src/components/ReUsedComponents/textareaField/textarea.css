@@ -1,0 +1,32 @@
+.textarea-group{
+    display: flex;
+    flex-direction: column; 
+}
+
+.form-label{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(38, 39, 39);
+    padding-bottom: 8px;
+}
+
+.text-control{
+    padding: 6px 5px;
+    border-radius: 3px;
+    border: 1.2px rgb(175, 166, 166) solid;
+    font-size:14px;
+    background-color: rgb(255, 255, 255);
+    width:100% !important;
+    height: 80px;
+}
+.text-control:focus{
+    outline: none;
+    border-color: var(--blue-color);
+    background-color: rgb(255, 255, 255);
+}
+
+#error {
+    font-size: 12px;
+    color: rgb(221, 34, 34);
+    margin-top: 5px;
+}
